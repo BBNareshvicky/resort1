@@ -1,0 +1,1119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@700&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .logo {
+            position: relative;
+            bottom: 25px;
+        }
+
+
+        header {
+            width: 100vw;
+            height: 90px;
+            background-color: whitesmoke;
+            align-items: center;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+
+        header nav ul li {
+            display: inline;
+            list-style-type: none;
+            margin-left: 50px;
+            font-family: 'Cormorant SC', serif;
+            font-size: 23px;
+
+        }
+
+        header nav ul li a:hover {
+            color: rgb(0, 17, 255);
+
+        }
+
+        header nav ul li a {
+            text-decoration: none;
+            color: black;
+        }
+        .video
+        {
+            width: 100vw;
+        }
+
+        .resort {
+            width: 100vw;
+            height: 1370px;
+
+        }
+        .title
+        {
+            height: 0px;
+            text-align: center;
+            position: relative;
+            bottom: 500px;
+            line-height: 90px;
+            font-size: 38px;
+            color:lightyellow;
+            font-family: 'Cormorant SC', serif;
+
+        }
+
+
+        .blur {
+            width: 40%;
+            height: 500px;
+            background-color: white;
+            position: relative;
+            bottom: 1640px;
+            left: 200px;
+            opacity: 0.75;
+        }
+
+        .cont {
+            width: 38%;
+            position: relative;
+            bottom: 1230px;
+            left: 200px;
+            z-index: 1;
+            padding-left: 20px;
+        }
+
+        .cont h1 {
+            width: 350px;
+            border-bottom: 5px solid black;
+            padding-bottom: 20px;
+        }
+
+        .cont p {
+            position: relative;
+            top: 50px;
+            font-size: 23px;
+            line-height: 35px;
+        }
+
+        .blur1 {
+            width: 80%;
+            height: 550px;
+            background-color: white;
+            position: relative;
+            bottom: 1480px;
+            left: 150px;
+            opacity: 0.75;
+        }
+
+        .what {
+            width: 100%;
+            position: relative;
+            bottom: 1970px;
+            z-index: 1;
+            display: flex;
+            justify-content: center;
+            right: 200px;
+
+        }
+
+        .cont1 h1 {
+
+            border-bottom: 5px solid black;
+            padding-bottom: 20px;
+            position: relative;
+            left: 200px;
+        }
+
+        .cont1 li {
+            position: relative;
+            top: 50px;
+            left: 200px;
+            font-size: 20px;
+            line-height: 33px;
+            font-weight: bold;
+
+        }
+
+        .cont2 li {
+
+            position: relative;
+            top: 110px;
+            left: 250px;
+            font-size: 20px;
+            line-height: 33px;
+            font-weight: bold;
+        }
+
+
+
+        .sea h2{
+            width: fit-content;
+            position: relative;
+            background: linear-gradient(to bottom right,rgb(0, 217, 255), rgb(0, 106, 255));
+            opacity: 0.8;
+            bottom: 250px;
+            text-align: center;
+            left: 110px;
+            font-size: 65px;
+            border-radius: 10px;
+        }
+        .living h2 {
+              width: fit-content;
+            position: relative;
+            background: linear-gradient(to bottom right,rgb(0, 217, 255), rgb(0, 106, 255));
+            opacity: 0.8;
+            opacity: 0.8;
+            bottom: 250px;
+            text-align: center;
+            left: 60px;
+            font-size: 65px;
+            border-radius: 10px;
+        }
+
+        .sun h2
+        {
+            position: relative;
+            background: linear-gradient(to bottom right,rgb(0, 217, 255), rgb(0, 106, 255));
+            opacity: 0.8;
+            width: fit-content;
+            bottom: 1040px;
+            left: 875px;
+            text-align: center;
+            font-size: 65px;
+            z-index: 1;
+            border-radius: 10px;
+        }
+        .bar h2 {
+
+            position: relative;
+            background: linear-gradient(to bottom right,rgb(0, 217, 255), rgb(0, 106, 255));
+            opacity: 0.8;
+            width: fit-content;
+            bottom: 1040px;
+            left: 820px;
+            text-align: center;
+            font-size: 65px;
+            z-index: 1;
+            border-radius: 10px;
+        }
+
+
+
+
+        .flip {
+            width: 500px;
+            height: 400px;
+            position: relative;
+            bottom: 310px;
+            left: 130px;
+            background:linear-gradient(to bottom right, rgba(76, 0, 255, 0.996),rgba(0, 221, 255, 0.854));
+            border-radius: 30px;
+            text-align: center;
+            z-index: -1;
+        }
+
+        .flip p {
+            padding-top: 20px;
+            font-size: 23px;
+            line-height: 30px;
+        }
+
+        .flip h3 {
+            padding-top: 100px;
+            font-size: 38px;
+        }
+        .flip1 {
+            width: 500px;
+            height: 400px;
+            position: relative;
+            margin-top: -710px;
+            left: 710px;
+            background:linear-gradient(to bottom right, rgba(76, 0, 255, 0.996),rgba(0, 221, 255, 0.854));
+            border-radius: 30px;
+            text-align: center;
+            z-index: -1;
+        }
+
+        .flip1 p {
+            padding-top: 20px;
+            font-size: 23px;
+            line-height: 30px;
+        }
+
+        .flip1 h3 {
+            padding-top: 100px;
+            font-size: 38px;
+        }
+        .flip2 {
+            width: 500px;
+            height: 400px;
+            position: relative;
+            top: 70px;
+            left: 130px;
+            background:linear-gradient(to bottom right, rgba(76, 0, 255, 0.996),rgba(0, 221, 255, 0.854));
+            border-radius: 30px;
+            text-align: center;
+            z-index: -1;
+        }
+
+        .flip2 p {
+            padding-top: 20px;
+            font-size: 23px;
+            line-height: 30px;
+        }
+
+        .flip2 h3 {
+            padding-top: 100px;
+            font-size: 38px;
+        }
+        .flip3 {
+            width: 500px;
+            height: 400px;
+            position: relative;
+            bottom: 330px;
+            left: 710px;
+            background:linear-gradient(to bottom right, rgba(76, 0, 255, 0.996),rgba(0, 221, 255, 0.854));
+            border-radius: 30px;
+            text-align: center;
+            z-index: -1;
+        }
+
+        .flip3 p {
+            padding-top: 20px;
+            font-size: 23px;
+            line-height: 30px;
+        }
+
+        .flip3 h3 {
+            padding-top: 100px;
+            font-size: 38px;
+        }
+
+
+
+        .sea,
+        .living {
+
+            position: relative;
+            left: 120px;
+        }
+
+        .sea img,
+        .living img {
+            border-radius: 20px;
+        }
+
+        .sun img,
+        .bar img {
+            position: relative;
+            left: 800px;
+            bottom: 800px;
+            border-radius: 20px;
+        }
+
+        .sun,
+        .sea,
+        .living,
+        .bar {
+            width: fit-content;
+            height: 400px;
+
+        }
+
+        .sec2 {
+            width: 0px;
+            height: 0px;
+            position: relative;
+            top: 70px;
+            left: 10px;
+            transition: all;
+            transition-duration: 1s;
+
+        }
+
+        .sec3 {
+            width: 0px;
+            height: 0px;
+            position: relative;
+            top: 470px;
+            right: 90px;
+            transition: all;
+            transition-duration: 1s;
+
+        }
+
+        .sec1 {
+            width: 0px;
+            height: 0px;
+            position: relative;
+            top: 90px;
+            right: 90px;
+            transition: all;
+            transition-duration: 1s;
+
+        }
+
+        .sec {
+            width: 500px;
+            height: 400px;
+            position: relative;
+            top: 90px;
+            left: 10px;
+            transition: all;
+            transition-duration: 1s;
+          
+
+
+        }
+
+        .sea:hover {
+            transform: rotateY(180deg);
+            display: none;
+        }
+        .sun:hover {
+            transform: rotateY(180deg);
+            display: none;
+        }
+        .living:hover {
+            transform: rotateY(180deg);
+            display: none;
+        }
+        .bar:hover {
+            transform: rotateY(180deg);
+            display: none;
+        }
+
+        .cont3 h1 {
+            text-align: center;
+        }
+
+        .cont3 p {
+            width: 60%;
+            position: relative;
+            left: 280px;
+            top: 40px;
+            text-align: center;
+            font-size: 23px;
+            line-height: 30px;
+        }
+
+
+        .dining {
+            width: 100vw;
+            height: 1250px;
+
+
+
+        }
+
+        .cont4 h1 {
+            text-align: center;
+        }
+
+        .cont4 p {
+            width: 70%;
+            position: relative;
+            left: 200px;
+            top: 40px;
+            text-align: center;
+            font-size: 23px;
+            line-height: 30px;
+        }
+
+        .act1 {
+            width: 48%;
+            height: 350px;
+            background-color: rgb(43, 49, 60);
+            position: relative;
+            top: 70px;
+            left: 10px;
+
+        }
+
+        .act1 img {
+            position: relative;
+            left: 20px;
+            top: 47px;
+        }
+
+        .cont5 {
+            position: relative;
+            color: white;
+            left: 300px;
+            bottom: 200px;
+        }
+
+        .cont5 p {
+            line-height: 27px;
+            font-size: 18px;
+            margin-top: 20px;
+        }
+
+        .act2 {
+            width: 40%;
+            height: 350px;
+            position: relative;
+
+            left: 685px;
+            bottom: 280px;
+        }
+
+        .act2 img {
+            position: relative;
+            left: 20px;
+            top: 55px;
+        }
+
+        .cont6 {
+            width: 70%;
+            position: relative;
+            left: 300px;
+            bottom: 200px;
+        }
+
+        .cont6 p {
+            line-height: 27px;
+            font-size: 18px;
+            margin-top: 20px;
+        }
+
+        .act3 {
+            width: 49%;
+            height: 350px;
+
+            position: relative;
+            bottom: 250px;
+
+        }
+
+        .act3 img {
+            position: relative;
+            left: 20px;
+            top: 47px;
+        }
+
+        .cont7 {
+            position: relative;
+            left: 300px;
+            bottom: 200px;
+        }
+
+        .cont7 p {
+            line-height: 27px;
+            font-size: 18px;
+            margin-top: 20px;
+        }
+
+        .act4 {
+            width: 620px;
+            height: 345px;
+            position: relative;
+            background-color: rgb(43, 49, 60);
+            left: 700px;
+            bottom: 610px;
+        }
+
+        .act4 img {
+            position: relative;
+            left: 20px;
+            top: 47px;
+        }
+
+        .cont8 {
+            width: fit-content;
+            color: white;
+            position: relative;
+            left: 300px;
+            bottom: 200px;
+        }
+
+        .cont8 p {
+            line-height: 27px;
+            font-size: 18px;
+            margin-top: 20px;
+        }
+
+        .act5 {
+            width: 48%;
+            height: 340px;
+            background-color: rgb(43, 49, 60);
+            position: relative;
+            left: 10px;
+            bottom: 600px;
+
+
+        }
+
+        .act5 img {
+            position: relative;
+            left: 20px;
+            top: 47px;
+        }
+
+        .cont9 {
+            color: white;
+            position: relative;
+            left: 300px;
+            bottom: 200px;
+        }
+
+        .cont9 p {
+            line-height: 27px;
+            font-size: 18px;
+            margin-top: 20px;
+        }
+
+        .act6 {
+            width: 25%;
+            height: 350px;
+            position: relative;
+
+            left: 700px;
+            bottom: 935px;
+        }
+
+        .act6 img {
+            position: relative;
+            left: 20px;
+            top: 47px;
+        }
+
+        .cont10 {
+            position: relative;
+            left: 300px;
+            bottom: 200px;
+        }
+
+        .cont10 p {
+            line-height: 27px;
+            font-size: 18px;
+            margin-top: 20px;
+        }
+
+        .activity {
+            width: 100vw;
+            height: 1350px;
+
+        }
+
+
+        .spa1 img {
+            position: relative;
+            left: 20px;
+            bottom: 205px;
+        }
+
+        .spa2 img {
+            position: relative;
+            left: 940px;
+            bottom: 500px;
+
+        }
+
+
+
+        .cont11 h1 {
+            text-align: center;
+        }
+
+        .cont11 p {
+            line-height: 27px;
+            font-size: 18px;
+            text-align: center;
+            position: relative;
+            top: 50px;
+        }
+
+        .spa {
+            width: 100vw;
+            height: 400px;
+        }
+
+        .footer {
+            width: 100vw;
+            height: 650px;
+            background-color: black;
+            position: relative;
+
+        }
+
+        .logo1 img {
+
+            background-color: white;
+            position: relative;
+            left: 39.5%;
+            top: 10px;
+        }
+
+        .cont12 ul li {
+            list-style-type: none;
+            display: inline;
+            padding-left: 10px;
+            border-right: 3px solid white;
+            padding-right: 10px;
+        }
+
+        .cont12 ul li:hover {
+            padding-bottom: 10px;
+            border-bottom: 3px solid white;
+        }
+
+        .cont12 ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .cont12 {
+            position: relative;
+            text-align: center;
+            top: 50px;
+            right: 20px;
+        }
+
+        .logo2 img {
+            position: relative;
+            left: 45%;
+            top: 150px;
+        }
+
+        .cont13 {
+            width: 50vw;
+            color: white;
+            position: relative;
+            text-align: center;
+            top: 200px;
+            left: 330px;
+            font-size: x-large;
+            border-bottom: 3px solid white;
+            padding-bottom: 90px;
+        }
+
+        .li {
+            width: fit-content;
+            height: 50px;
+            background-color: white;
+        }
+
+        .social {
+            width: 100vw;
+            display: flex;
+            gap: 10px;
+            position: relative;
+            justify-content: center;
+            top: 130px;
+            right: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="#"><img src="assets/images/large.png" width="250px" height="180px"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#resort">Resort</a></li>
+                <li><a href="#dining">Dining</a></li>
+                <li><a href="#activity">Activities</a></li>
+                <li><a href="#spa">Spa</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+            </ul>
+            <div class="navbar-toggler">
+
+            </div>
+        </nav>
+
+    </header>
+    <main>
+        <div class="video">
+            <video width="100%" autoplay muted>
+                <source src="assets/videos/resort1.mp4">
+            </video>
+        </div>
+        <div class="resort">
+            <div class="title">
+                <h1>Welcome</h1>
+                <h3> To</h3>
+                <h2>ASGUARD Resort</h2>
+
+            </div>
+            <div class="pic">
+                <img src="assets/images/r5.jpg" width="100%" height="700px">
+                <div class="pic1" id="resort">
+                    <img src="assets/images/r4.jpg" width="100%" height="650px">
+                </div>
+            </div>
+            <div class="cont">
+                <h1> Adult Only
+                    All-Inclusive Resort</h1>
+                <p>An island oasis for downtime and
+                    disconnecting, Forbidden Resort
+                    rewrites the rule book on inclusive
+                    getaways. Our intimate adults-only (ages
+                    21+ only) resort sits within a botanical
+                    garden edged by 1000 feet of ocean
+                    shoreline, just a few miles from the warm
+                    waters of the Gulf Stream. We take care of
+                    all the details, because the time you'll
+                    spend together is the greatest luxury of all.
+                </p>
+            </div>
+
+            <div class="blur">
+
+            </div>
+            <div class="blur1">
+
+            </div>
+            <div class="what">
+                <div class="cont1">
+                    <h1>What's included</h1>
+                    <ul>
+                        <li>Luxurious accommodations</li>
+                        <li>24 Hour guest services</li>
+                        <li>Welcome Drinks and Refreshments</li>
+                        <li>All meals including small bites and fine dining</li>
+                        <li>Premium alcoholic beverages</li>
+                        <li>Selected wines</li>
+                        <li>Kayaks, stand-up paddle boards, snorkel gear, water trike</li>
+                        <li>Group yoga classes, fitness tiki, recreational amenities</li>
+                        <li>In-town transportation within a 5-mile radius</li>
+                    </ul>
+                </div>
+                <div class="cont2">
+                    <ul>
+                        <li>High-Speed WiFi in all bungalows and public areas</li>
+                        <li>Zen Pool & Jacuzzi</li>
+                        <li>Sunset Pool & Jacuzzi</li>
+                        <li>Valet parking</li>
+                        <li>On-site concierge</li>
+                        <li>Cruiser bikes - for use on the property only</li>
+                        <li>Daily housekeeping</li>
+                        <li>Turndown service</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="food">
+            <div class="dining" id="dining">
+                <div class="cont3">
+                    <h1>Restaurants at ASGUARD</h1>
+                    <h1> Fisherman's catch meets craft</h1>
+                    <h1>cocktails</h1>
+                    <p>From conch fritters to chicken wings to the catch of the day, you’re always within a
+                        step or two of something tasty at ASGUARD. No need to dress up to dine
+                        out! Enjoy casual, creative cuisine throughout the day. Our menus change often to
+                        coincide with the seasons & freshness and availability of ingredients.</p>
+                </div>
+                <div class="part">
+                    <div class="sec">
+                        <div class="sea">
+                            <img src="assets/images/sea.jpg" width="500px" height="400px">
+                            <h2>Sea Senor</h2>
+                        </div>
+                    </div>
+                    <div class="flip">
+                        <h3>Sea Senor</h3>
+                        <p>Fresh local seafood and the vibrant
+                            <br> flavors of Mexico come together at
+                            <br>Sea Señor, our beachfront go-to for
+                            <br>lunch and dinner under a shady palm.
+                        </p>
+
+                    </div>
+
+
+
+                    <div class="sec1">
+                        <div class="sun">
+                            <img src="assets/images/sun.jpg" width="500px" height="400px">
+                            <h2>SunSet View</h2>
+                        </div>
+                    </div>
+                    <div class="flip1">
+                        <h3>SunSet View</h3>
+                        <p>Stake out a spot at the Sunset
+                            <br> Bar or on Tiki Beach to enjoy
+                            <br> refreshing tropical drinks and icy
+                            <br> local brews along with a casual
+                            <br> dining menu.
+                        </p>
+
+                    </div>
+
+                    <div class="sec2">
+                        <div class="living">
+                            <img src="assets/images/living.jpg" width="500px" height="400px">
+                            <h2>Living Room</h2>
+                        </div>
+                    </div>
+                    <div class="flip2">
+                        <h3>Living Room</h3>
+                        <p>Chill out in the heart of your home away
+                            <br> from home. Your “living room” provides
+                            <br> sweeping views of the bay and is perfect
+                            <br> for enjoying a cocktail and a new novel,
+                            <br> or for cheering on your favorite team on
+                            <br> the big screen.
+                        </p>
+
+                    </div>
+                    <div class="sec3">
+                        <div class="bar">
+                            <img src="assets/images/bar.jpg" width="500px" height="400px">
+                            <h2>Hemingway Bar</h2>
+                        </div>
+                    </div>
+                    <div class="flip3">
+                        <h3>Hemingway <br>Bar</h3>
+                        <p>Top-shelf cocktails and timeless elegance define
+                            <br>“Old Key West” style at the Hemingway Bar
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="activity" id="activity">
+            <div class="cont4">
+                <h1>Activities:What to Do in ASGUARD</h1>
+                <p>Whether you want to kick back and relax or experience an action-packed
+                    itinerary across land, sea and sky, Forbidden delivers on a grand scale.
+                    Every day is a little different here, but each one is spectacular. Steps from your
+                    resort you’ll find stand-up paddleboards, snorkel gear, kayaks and more—
+                    grab a toy and hit the water. On land, look for lawn games and daily sunrise yoga.</p>
+            </div>
+            <div class="act1">
+                <img src="assets/images/yoga.jpg" width="250px" height="250px">
+                <div class="cont5">
+                    <h2>Yoga</h2>
+                    <p>Daily group yoga classes take place outdoors
+                        <br>on our Beach so that you can practice to
+                        <br>the relaxing soundtrack of ocean waves.
+                        <br> For a more private experience, book a
+                        <br> private yoga session to fit your personal
+                        <br>schedule and further your practice.
+                    </p>
+                </div>
+            </div>
+            <div class="act2">
+                <img src="assets/images/jet ski.jpg" width="250px" height="250px">
+                <div class="cont6">
+                    <h2>Jet Skiing</h2>
+                    <p>With 1,000 feet of waterfront shoreline,
+                        <br>daily life at revolves around the
+                        <br>endless beauty of the bay,hut provides
+                        <br>countless ways for you to enjoy it.
+                        <br>The perfect adventure awaits you, from
+                        <br>lounging poolside to dolphin spotting
+                        <br> from a stand-up paddle board or kayaking
+                        <br>the Florida shoreline alongside manatees.
+                    </p>
+                </div>
+            </div>
+            <div class="act3">
+                <img src="assets/images/Scuba-Diving.jpg" width="250px" height="250px">
+                <div class="cont7">
+                    <h2>Scuba Diving</h2>
+                    <p>Explore fantastic depths of the 3rd largest
+                        <br>reef system in the world and see why the
+                        <br>protected waters of the world famous diving
+                        <br>destination. Let us organize chartered or group
+                        <br>wreck dives, drift dives, night dives, and reef
+                        <br>dives,available in both full and half day options.
+                    </p>
+                </div>
+            </div>
+            <div class="act4">
+                <img src="assets/images/Free-Diving.jpg" width="250px" height="250px">
+                <div class="cont8">
+                    <h2>Free Diving</h2>
+                    <p>Explore fantastic depths of the 3rd
+                        <br>largest reef system in the world and
+                        <br>see why the protected waters of the
+                        <br>world famous diving destination. Let
+                        <br>us organize chartered or group wreck
+                        <br>dives, drift dives, night dives, and reef
+                        <br>dives,available in both full day options.
+                    </p>
+                </div>
+            </div>
+            <div class="act5">
+                <img src="assets/images/Kayaking.jpg" width="250px" height="250px">
+                <div class="cont9">
+                    <h2>Kayaking</h2>
+                    <p>Kayaking is a fun water sport. It involves
+                        <br> the use of a kayak, a narrowboat with a
+                        <br> double-blade paddle to move on water.
+                        <br> The driver is supposed to navigate
+                        <br> through the waterways by sitting face-
+                        <br> forward and marching ahead with alternating
+                        <br> side-to-side paddle strokes. Kayaking ways
+                        <br> originally invented for hunting.
+                    </p>
+                </div>
+            </div>
+            <div class="act6">
+                <img src="assets/images/White-Water-Rafting.jpg" width="250px" height="250px">
+                <div class="cont10">
+                    <h2>White-Water-Rafting</h2>
+                    <p>Rafting is a sport in which rafters
+                        <br>use an inflatable raft to race with
+                        <br>other teams. The team that reaches
+                        <br> the destination first wins the race.
+                        <br>The racing is done on white water or
+                        <br>rough water of different degrees. The
+                        <br>rafters use double blades to the boat.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="spa" id="spa">
+            <div class="cont11">
+                <h1>ASGUARD Spa</h1>
+                <p>Head to the Beach House to shop in our boutique,
+                    <br> and to schedule your spa retreat in paradise.
+                    <br> We offer luxurious treatments inspired by the black
+                    <br> bamboo in our Zen Garden, and the sand and sea. Highlights
+                    <br> include five outdoor treatment cabanas, bayside waterfront
+                    <br> treatment tiki, luxurious men’s and women’s locker rooms,
+                    <br> whimsical state-of-the-art steam room, Himalayan salt treatment
+                    <br> room, and plush indoor relaxation area.
+                </p>
+
+            </div>
+            <div class="spa1">
+                <img src="assets/images/spa.jpg" width="400px" height="290">
+            </div>
+            <div class="spa2">
+                <img src="assets/images/spa1.jpg" width="400px" height="290">
+
+            </div>
+
+        </div>
+
+
+        <div class="footer" id="gallery">
+            <div class="logo1">
+                <img src="assets/images/large.png" width="250px" height="180px">
+
+            </div>
+            <div class="cont12">
+                <ul>
+                    <li><a href="#">SITEMAP</a></li>
+                    <li><a href="#">PRIVACYPOLICY</a></li>
+                    <li><a href="#">GALLERY</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                    <li><a href="#">EMAILS & OFFERS</a></li>
+                </ul>
+
+
+            </div>
+            <div class="logo2">
+                <img src="assets/images/trip.png" width="100px" height="100px">
+
+            </div>
+            <div class="cont13">
+
+                <p>2600 E Highway 24, Torrey, UT 84775 | Phone: 435-425-3761 |</p>
+
+
+            </div>
+            <div class="social">
+                <div class="fb">
+                    <a href="#"><img src="assets/images/f.png" width="50px" height="50px"></a>
+                </div>
+                <div class="in">
+                    <a href="#"><img src="assets/images/i.png" width="50px" height="50px"></a>
+                </div>
+                <div class="li">
+                    <a href="#"><img src="assets/images/l.png" width="50px" height="50px"></a>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+    <script>
+        const navbarToggler = document.querySelector(".navbar-toggler");
+        const navbarMenu = document.querySelector("nav ul");
+        const navbarLinks = document.querySelectorAll("nav a");
+
+        navbarToggler.addEventListener("click", navbarTogglerClick);
+
+        function navbarTogglerClick() {
+            navbarToggler.classList.toggle("open-navbar-toggler");
+            navbarMenu.classList.toggle("open");
+        }
+
+
+
+        for (let i = 0; i < navbarLinks.length; i++) {
+            navbarLinks[i].addEventListener("click", navbarLinkClick);
+        }
+
+        function navbarLinkClick(event) {
+
+            smoothScroll(event);
+
+            if (navbarMenu.classList.contains("open")) {
+                navbarToggler.click();
+            }
+
+        }
+
+        function smoothScroll(event) {
+            event.preventDefault();
+            const targetId = event.currentTarget.getAttribute("href");
+            const targetPosition = document.querySelector(targetId).offsetTop;
+            const startPosition = window.pageYOffset;
+            const distance = targetPosition - startPosition;
+            const duration = 1000;
+            let start = null;
+
+            window.requestAnimationFrame(step);
+
+            function step(timestamp) {
+                if (!start) start = timestamp;
+                const progress = timestamp - start;
+
+                window.scrollTo(0, easeInOutCubic(progress, startPosition, distance, duration));
+                if (progress < duration) window.requestAnimationFrame(step);
+            }
+        }
+
+
+
+        function linear(t, b, c, d) {
+            return c * t / d + b;
+        };
+
+        function easeInOutQuad(t, b, c, d) {
+            t /= d / 2;
+            if (t < 1) return c / 2 * t * t + b;
+            t--;
+            return -c / 2 * (t * (t - 2) - 1) + b;
+        };
+
+        function easeInOutCubic(t, b, c, d) {
+            t /= d / 2;
+            if (t < 1) return c / 2 * t * t * t + b;
+            t -= 2;
+            return c / 2 * (t * t * t + 2) + b;
+        };
+    </script>
+</body>
+
+</html>
